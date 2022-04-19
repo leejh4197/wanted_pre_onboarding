@@ -15,6 +15,22 @@ const Slider = () => {
     setPercentage(e.target.value);
   };
 
+  const onClick1 =()=>{
+    setPercentage(1)
+  }
+  const onClick2 =()=>{
+    setPercentage(25)
+  }
+  const onClick3 =()=>{
+    setPercentage(50)
+  }
+  const onClick4 =()=>{
+    setPercentage(75)
+  }
+  const onClick5 =()=>{
+    setPercentage(100)
+  }
+  
   useEffect(() => {
     const rangeWidth = rangeRef.current.getBoundingClientRect().width;
     const thumbWidth = thumbRef.current.getBoundingClientRect().width;
@@ -58,6 +74,13 @@ const Slider = () => {
         onChange={onChange}
       />
     </div>
+      <div className="percent-wrap">
+        <div className='percent' onClick={onClick1}>1%</div>
+        <div className='percent' onClick={onClick2}>25%</div>
+        <div className='percent' onClick={onClick3}>50%</div>
+        <div className='percent' onClick={onClick4}>75%</div>
+        <div className='percent' onClick={onClick5}>100%</div>
+      </div>
     </div>
     
     </>

@@ -14,7 +14,6 @@
       border: 1px solid #000;
       
     }
-    /* Background */
     .slider-container::before {
       content: '';
       background-color: white;
@@ -29,9 +28,8 @@
       pointer-events: none;
     }
     
-    /* Custom Progress Bar */
     .progress-bar-cover {
-      background-color: rgb(218, 55, 145);
+      background-color: #10AFAF;
       width: 0%;
       height: var(--progress-bar-height);
       display: block;
@@ -44,13 +42,28 @@
       pointer-events: none;
     }
     
-    /*  Hide Original */
     .range {
       -webkit-appearance: none;
-      background-color: rgba(240, 9, 9, 0.397);
+      background-color: black;
       height: 10px;
       width: 100%;
       cursor: pointer;
       opacity: 0;
       margin: 0 auto;
+    }
+  
+    .percent-wrap{
+      display: flex;
+      justify-content: space-between;
+    }
+    .percent{
+      background-color: #EBEBEB;
+      width: 5%;
+      height: 25px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+    .percent:hover{
+      background-color: #10AFAF;
+      color: white;
     }
